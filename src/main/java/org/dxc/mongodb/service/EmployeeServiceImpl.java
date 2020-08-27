@@ -1,7 +1,6 @@
 package org.dxc.mongodb.service;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 
 import org.dxc.mongodb.model.Employee;
@@ -37,6 +36,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public void deleteAll() {
 		employeeRepository.deleteAll();
+	}
+
+	@Override
+	public void update(Employee employee) {
+		employeeRepository.save(employee);
+		
 	}
 
 	

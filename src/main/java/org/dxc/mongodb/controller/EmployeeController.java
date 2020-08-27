@@ -47,6 +47,11 @@ public class EmployeeController {
 		employeeService.deleteAll();
 	}
 	
+	@RequestMapping(value="/update",method=RequestMethod.PUT)
+	public void update(@RequestBody Employee employee) {
+		employeeService.update(employee);
+	}
+
 
 
 }

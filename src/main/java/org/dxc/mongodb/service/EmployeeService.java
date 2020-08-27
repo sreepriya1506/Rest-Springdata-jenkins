@@ -1,7 +1,6 @@
 package org.dxc.mongodb.service;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 
 import org.dxc.mongodb.model.Employee;
@@ -19,6 +18,8 @@ public interface EmployeeService {
 	void delete(double employeeid);
 
 	void deleteAll();
+
+	void update(Employee employee);
 
 	
 }
